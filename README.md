@@ -2,9 +2,11 @@
 
 Portofolio pribadi Mohammad Nawfal Arfa: mahasiswa Linguistik Indonesia di UPN "Veteran" Jawa Timur, video editor, dan pembuat IZZA_ (AI lokal di ponsel).
 
-Desainnya terinspirasi dari [cindyly.design](https://www.cindyly.design/): virtual pet 3D interaktif di halaman depan, dock ala macOS (works / quests / profile), judul serif miring, label monospace, sticker board, dan halaman proyek dengan daftar isi di samping.
+<p align="center">
+  <img src="assets/readme/pet-demo.gif" alt="Virtual pet 3D: perangkat kucing oren dengan ikan cupang pixel. Diberi makan, main tebak-tebakan, lalu tidur." width="360" />
+</p>
 
-Dibuat dengan HTML, CSS, dan JavaScript biasa (plus three.js untuk 3D). Tidak perlu install apa pun.
+Halaman depannya punya virtual pet 3D yang bisa dimainkan, dock ala macOS (works / quests / profile), sticker board, dan halaman proyek dengan daftar isi di samping. Dibuat dengan HTML, CSS, dan JavaScript (plus three.js untuk 3D), tanpa proses build.
 
 ## Lihat website
 
@@ -19,24 +21,6 @@ Dibuat dengan HTML, CSS, dan JavaScript biasa (plus three.js untuk 3D). Tidak pe
 | Works | IZZA_, Simpang Kisah, Web Pertama, Portfolio v1 |
 | Quests | Skill, eksperimen kode, sticker board, dan to-do |
 | Profile | Foto, bio, dan kontak |
-
-## Struktur
-
-```
-index.html               Halaman utama: home, works, quests, profile (pindah lewat dock)
-work/izza.html           Proyek: IZZA_, AI lokal di ponsel (dengan 2 video promo)
-work/simpang-kisah.html  Proyek: film pendek Simpang Kisah (video YouTube)
-work/web-pertama.html    Proyek: website pertama
-work/portfolio-v1.html   Proyek: portofolio versi pertama
-assets/css/style.css     Semua styling (warna & font di bagian TOKENS paling atas)
-assets/js/pet.js         Logika akuarium pixel dan mini game
-assets/js/pet3d.js       Model 3D perangkat (three.js)
-assets/js/pet-fx.js      Suara tombol dan efek partikel
-assets/js/main.js        Navigasi dock, stiker drag, daftar isi halaman proyek
-assets/img/              Foto, cover proyek, dan cuplikan IZZA_
-assets/video/            Video promo IZZA_ (sudah dikompres untuk web)
-assets/vendor/           three.js dan font 3D untuk tag nama
-```
 
 ## Virtual pet
 
@@ -55,9 +39,28 @@ Klik perangkatnya untuk mode layar penuh (keyboard: F, P, S, panah kiri/kanan, E
 
 Model 3D butuh WebGL dan server (GitHub Pages atau `npx serve .`). Kalau tidak tersedia, otomatis tampil versi 2D.
 
+## Struktur
+
+```
+index.html               Halaman utama: home, works, quests, profile (pindah lewat dock)
+work/izza.html           Proyek: IZZA_, AI lokal di ponsel (dengan 2 video promo)
+work/simpang-kisah.html  Proyek: film pendek Simpang Kisah (video YouTube)
+work/web-pertama.html    Proyek: website pertama
+work/portfolio-v1.html   Proyek: portofolio versi pertama
+assets/css/style.css     Semua styling (warna & font di bagian TOKENS paling atas)
+assets/js/pet.js         Logika akuarium pixel dan mini game
+assets/js/pet3d.js       Model 3D perangkat (three.js)
+assets/js/pet-fx.js      Suara tombol dan efek partikel
+assets/js/main.js        Navigasi dock, stiker drag, daftar isi halaman proyek
+assets/img/              Foto, cover proyek, dan cuplikan IZZA_
+assets/video/            Video promo IZZA_ (sudah dikompres untuk web)
+assets/readme/           GIF demo untuk README ini
+assets/vendor/           three.js dan font 3D untuk tag nama
+```
+
 ## Mengubah isi
 
-- **Kontak** (LinkedIn, GitHub, Email) ada di bagian `HEADER` pada `index.html`. Email yang dipakai: `nawfalarfa14@gmail.com` (dari portofolio v1).
+- **Kontak** (LinkedIn, GitHub, Email) ada di bagian `HEADER` pada `index.html`.
 - **Bio dan kontak lain** ada di bagian `PROFILE` pada `index.html`.
 - **Foto**: `assets/img/profile.jpg` (juga ikon profile di dock), `about-1.jpg`, `about-2.jpg`.
 
@@ -72,21 +75,16 @@ Model 3D butuh WebGL dan server (GitHub Pages atau `npx serve .`). Kalau tidak t
 ffmpeg -i video.mp4 -vf scale=540:-2 -c:v libx264 -crf 27 -c:a aac -b:a 96k -movflags +faststart assets/video/nama.mp4
 ```
 
-## Melihat di komputer sendiri
+## Menjalankan di komputer sendiri
 
 ```bash
 npx serve .
 ```
+
+Atau buka folder ini di VS Code, lalu klik kanan `index.html` → **Open with Live Server**.
 
 ## Publish ke GitHub Pages
 
 1. Buka **Settings > Pages** (https://github.com/Izzatiin/portofolio/settings/pages).
 2. Di **Source**, pilih **Deploy from a branch**, branch `main`, folder `/ (root)`, lalu **Save**.
 3. Tunggu 1-2 menit, lalu buka https://izzatiin.github.io/portofolio/
-
-## Kredit
-
-- Desain terinspirasi dari portofolio [Cindy Ly](https://www.cindyly.design/)
-- Font [DM Sans](https://github.com/googlefonts/dm-fonts), [DM Mono](https://github.com/googlefonts/dm-mono), dan [Instrument Serif](https://github.com/Instrument/instrument-serif) (SIL Open Font License, lihat `assets/fonts/`)
-- Ikon dari [Phosphor Icons](https://phosphoricons.com/) (MIT License)
-- 3D dengan [three.js](https://threejs.org/) (MIT License, lihat `assets/vendor/three/LICENSE`)
