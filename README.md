@@ -10,8 +10,8 @@ Halaman depannya punya virtual pet 3D yang bisa dimainkan, dock ala macOS (works
 
 ## Lihat website
 
-- **Live (GitHub Pages):** https://izzatiin.github.io/portofolio/
-- **Preview cepat:** https://raw.githack.com/Izzatiin/portofolio/HEAD/index.html
+- **Live:** https://portofolio-tamaguchi-nawfal-arfa.vercel.app
+- **Preview cepat:** https://raw.githack.com/Izzatiin/Portofolio-Tamaguchi/HEAD/index.html
 
 ## Isi
 
@@ -37,7 +37,7 @@ Klik perangkatnya untuk mode layar penuh (keyboard: F, P, S, panah kiri/kanan, E
 - **Warna ikan**: `FISH_COLORS` di `assets/js/pet.js`
 - **Suara**: `SOUNDS` di `assets/js/pet-fx.js`
 
-Model 3D butuh WebGL dan server (GitHub Pages atau `npx serve .`). Kalau tidak tersedia, otomatis tampil versi 2D.
+Model 3D butuh WebGL dan server (Vercel atau `npx serve .`). Kalau tidak tersedia, otomatis tampil versi 2D.
 
 ## Struktur
 
@@ -83,8 +83,6 @@ npx serve .
 
 Atau buka folder ini di VS Code, lalu klik kanan `index.html` → **Open with Live Server**.
 
-## Publish ke GitHub Pages
+## Publish
 
-1. Buka **Settings > Pages** (https://github.com/Izzatiin/portofolio/settings/pages).
-2. Di **Source**, pilih **Deploy from a branch**, branch `main`, folder `/ (root)`, lalu **Save**.
-3. Tunggu 1-2 menit, lalu buka https://izzatiin.github.io/portofolio/
+Website ini di-deploy lewat [Vercel](https://vercel.com) dan otomatis ter-update setiap ada push ke branch `main`. Tidak perlu build command; output directory cukup root (`./`).
