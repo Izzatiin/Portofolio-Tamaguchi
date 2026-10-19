@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Nawfal Arfa - Linguist &amp; Creative Creator</title>
+    <meta name="description" content="Mohammad Nawfal Arfa: Indonesian Linguistics student, video editor, and maker of IZZA_, a local AI app for phones. Works, side quests, and a pixel fish you can feed." />
+    <meta property="og:title" content="Nawfal Arfa - Linguist &amp; Creative Creator" />
+    <meta property="og:description" content="Indonesian Linguistics student who tells stories in frames: video editing, photography, and self-taught web projects." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/img/og-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#f3f3f1" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="assets/fonts/dm-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="assets/fonts/instrument-serif-latin-400-italic.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script type="importmap">
+      { "imports": { "three": "./assets/vendor/three/three.module.min.js" } }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- HEADER: link kontak -->
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Nawfal Arfa, home">
+        <span class="brand-mark" aria-hidden="true">na</span>
+        <span class="brand-name">Nawfal Arfa</span>
+      </a>
+      <nav class="top-links" aria-label="Contact">
+        <a href="https://www.linkedin.com/in/nawfal-arfa-496b3930b/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/Izzatiin" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:nawfalarfa14@gmail.com">Email</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- ============ HOME ============ -->
+      <section class="view view-home" id="home" data-view="home" aria-labelledby="home-title">
+        <h1 class="sr-only" id="home-title">Mohammad Nawfal Arfa, linguist and creative creator. I tell stories in frames.</h1>
+        <div class="hero">
+          <div class="hero-left" aria-hidden="true">
+            <p class="hero-hello">halo,</p>
+            <p class="hero-big">I tell stories</p>
+            <p class="hero-note">linguist &amp; creative creator</p>
+          </div>
+
+          <!-- Virtual pet: logikanya ada di assets/js/pet.js -->
+          <div class="pet-stage" data-pet-stage>
+            <div class="pet">
+              <span class="pet-ring" aria-hidden="true"></span>
+              <span class="pet-chain" aria-hidden="true"></span>
+              <span class="pet-tag" aria-hidden="true">nawfal</span>
+              <span class="pet-ear pet-ear--l" aria-hidden="true"></span>
+              <span class="pet-ear pet-ear--r" aria-hidden="true"></span>
+              <div class="pet-body" aria-hidden="true">
+                <span class="pet-cap"></span>
+                <span class="pet-seam"></span>
+              </div>
+              <div class="pet-screen" data-pet-screen>
+                <canvas width="80" height="64" role="img" aria-label="Pixel aquarium with a betta fish. Use the pink buttons to feed it, play a guessing game, or put it to sleep."></canvas>
+              </div>
+              <button class="pet-btn pet-btn--a" type="button" data-pet-btn="a" data-label="FEED" aria-label="Feed the fish"></button>
+              <button class="pet-btn pet-btn--b" type="button" data-pet-btn="b" data-label="PLAY" aria-label="Play a guessing game"></button>
+              <button class="pet-btn pet-btn--c" type="button" data-pet-btn="c" data-label="SLEEP" aria-label="Put the fish to sleep"></button>
+              <button class="pet-expand" type="button" data-pet-open aria-label="Open the aquarium in full screen">
+                <svg class="icon" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M216,48V96a8,8,0,0,1-16,0V67.31l-50.34,50.35a8,8,0,0,1-11.32-11.32L188.69,56H160a8,8,0,0,1,0-16h48A8,8,0,0,1,216,48ZM106.34,138.34,56,188.69V160a8,8,0,0,0-16,0v48a8,8,0,0,0,8,8H96a8,8,0,0,0,0-16H67.31l50.35-50.34a8,8,0,0,0-11.32-11.32Z"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="hero-right">
+            <p class="hero-big serif" aria-hidden="true">in frames.</p>
+            <p class="hero-note">currently: indonesian linguistics <a href="#profile">@upnvjt</a></p>
+          </div>
+        </div>
+        <button class="pet-collapse" type="button" data-pet-close aria-label="Close full screen">
+          <svg class="icon" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M213.66,53.66,163.31,104H192a8,8,0,0,1,0,16H144a8,8,0,0,1-8-8V64a8,8,0,0,1,16,0V92.69l50.34-50.35a8,8,0,0,1,11.32,11.32ZM112,136H64a8,8,0,0,0,0,16H92.69L42.34,202.34a8,8,0,0,0,11.32,11.32L104,163.31V192a8,8,0,0,0,16,0V144A8,8,0,0,0,112,136Z"/></svg>
+        </button>
+        <p class="pet-hint" aria-hidden="true"><span class="hint-keys">keys: F feed, P play, S sleep, esc close</span><span class="hint-touch">tap the pink buttons or the screen</span></p>
+        <button class="pet-sound" type="button" data-pet-sound aria-pressed="true" aria-label="Turn sound off">
+          <svg class="icon icon-on" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M155.51,24.81a8,8,0,0,0-8.42.88L77.25,80H32A16,16,0,0,0,16,96v64a16,16,0,0,0,16,16H77.25l69.84,54.31A8,8,0,0,0,160,224V32A8,8,0,0,0,155.51,24.81ZM32,96H72v64H32ZM144,207.64,88,164.09V91.91l56-43.55Zm54-106.08a40,40,0,0,1,0,52.88,8,8,0,0,1-12-10.58,24,24,0,0,0,0-31.72,8,8,0,0,1,12-10.58ZM248,128a79.9,79.9,0,0,1-20.37,53.34,8,8,0,0,1-11.92-10.67,64,64,0,0,0,0-85.33,8,8,0,1,1,11.92-10.67A79.83,79.83,0,0,1,248,128Z"/></svg>
+          <svg class="icon icon-off" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M53.92,34.62A8,8,0,1,0,42.08,45.38L73.55,80H32A16,16,0,0,0,16,96v64a16,16,0,0,0,16,16H77.25l69.84,54.31A8,8,0,0,0,160,224V175.09l42.08,46.29a8,8,0,1,0,11.84-10.76ZM32,96H72v64H32ZM144,207.64,88,164.09V95.89l56,61.6Zm42-63.77a24,24,0,0,0,0-31.72,8,8,0,1,1,12-10.57,40,40,0,0,1,0,52.88,8,8,0,0,1-12-10.59Zm-80.16-76a8,8,0,0,1,1.4-11.23l39.85-31A8,8,0,0,1,160,32v74.83a8,8,0,0,1-16,0V48.36l-26.94,21A8,8,0,0,1,105.84,67.91ZM248,128a79.9,79.9,0,0,1-20.37,53.34,8,8,0,0,1-11.92-10.67,64,64,0,0,0,0-85.33,8,8,0,1,1,11.92-10.67A79.83,79.83,0,0,1,248,128Z"/></svg>
+          <span class="sound-on">sound on</span><span class="sound-off">sound off</span>
+        </button>
+        <p class="sr-only" aria-live="polite" data-pet-live></p>
+      </section>
+
+      <!-- ============ WORKS ============ -->
+      <!-- Tiap kartu mengarah ke halaman proyek di folder work/ -->
+      <section class="view" id="works" data-view="works" aria-labelledby="works-title" hidden>
+        <h2 class="sr-only" id="works-title">Works</h2>
+        <div class="works-grid">
+          <a class="work-card" href="work/izza.html">
+            <div class="work-media">
+              <img src="assets/img/work/izza.jpg" alt="IZZA_ app screens on an orange background with the astronaut mascot" width="1600" height="900" />
+            </div>
+            <div class="work-meta">
+              <span class="work-org"><svg class="icon" style="color:#f07a3a" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M176,16H80A24,24,0,0,0,56,40V216a24,24,0,0,0,24,24h96a24,24,0,0,0,24-24V40A24,24,0,0,0,176,16ZM80,32h96a8,8,0,0,1,8,8v8H72V40A8,8,0,0,1,80,32Zm96,192H80a8,8,0,0,1-8-8v-8H184v8A8,8,0,0,1,176,224Z"/></svg>Local AI app</span>
+              <span class="badge badge--building"><span class="badge-dot" aria-hidden="true"></span>New</span>
+            </div>
+            <h3 class="work-title serif">IZZA_</h3>
+          </a>
+
+          <a class="work-card" href="work/simpang-kisah.html">
+            <div class="work-media">
+              <img src="assets/img/work/simpang-kisah.jpg" alt="Simpang Kisah title card: a road that splits in two under a dusk sky" width="1600" height="900" loading="lazy" />
+            </div>
+            <div class="work-meta">
+              <span class="work-org"><svg class="icon" style="color:#e5533d" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40ZM184,56h32V72H184ZM72,200H40V184H72ZM72,72H40V56H72Zm48,128H88V184h32Zm0-128H88V56h32Zm48,128H136V184h32Zm0-128H136V56h32Zm48,128H184V184h32v16Z"/></svg>Linguistik Indonesia UPN Jatim</span>
+              <span class="badge badge--shipped"><span class="badge-dot" aria-hidden="true"></span>Released</span>
+            </div>
+            <h3 class="work-title serif">Simpang Kisah</h3>
+          </a>
+
+          <a class="work-card" href="work/web-pertama.html">
+            <div class="work-media">
+              <img src="assets/img/work/web-pertama.jpg" alt="Landing page of Web Pertama with code in the background" width="1356" height="644" loading="lazy" />
+            </div>
+            <div class="work-meta">
+              <span class="work-org"><svg class="icon" style="color:#2b67d6" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40ZM92.8,145.6a8,8,0,1,1-9.6,12.8l-32-24a8,8,0,0,1,0-12.8l32-24a8,8,0,0,1,9.6,12.8L69.33,128Zm58.89-71.4-32,112a8,8,0,1,1-15.38-4.4l32-112a8,8,0,0,1,15.38,4.4Zm53.11,60.2-32,24a8,8,0,0,1-9.6-12.8L186.67,128,163.2,110.4a8,8,0,1,1,9.6-12.8l32,24a8,8,0,0,1,0,12.8Z"/></svg>Self-taught project</span>
+              <span class="badge badge--shipped"><span class="badge-dot" aria-hidden="true"></span>Live</span>
+            </div>
+            <h3 class="work-title serif">Web Pertama</h3>
+          </a>
+
+          <a class="work-card" href="work/portfolio-v1.html">
+            <div class="work-media">
+              <img src="assets/img/work/portfolio-v1.jpg" alt="Portfolio v1 hero with a profile photo and orbiting tech icons" width="1600" height="1000" loading="lazy" />
+            </div>
+            <div class="work-meta">
+              <span class="work-org"><svg class="icon" style="color:#2f9e57" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,16V88H40V56Z"/></svg>Personal project</span>
+              <span class="badge badge--shipped"><span class="badge-dot" aria-hidden="true"></span>Live</span>
+            </div>
+            <h3 class="work-title serif">Portfolio v1</h3>
+          </a>
+        </div>
+      </section>
+
+      <!-- ============ QUESTS ============ -->
+      <section class="view" id="quests" data-view="quests" aria-labelledby="quests-title" hidden>
+        <header class="view-head">
+          <h2 class="serif" id="quests-title">Learning by making.</h2>
+          <p>Things I explore outside my linguistics classes: editing, photos, and teaching myself to code (•‿•)</p>
+        </header>
+
+        <div class="windows">
+          <article class="window">
+            <p class="window-bar">skills.txt</p>
+            <div class="window-text">
+              <h2 class="serif">What I work with</h2>
+              <ul class="skill-list" role="list">
+                <li>Video editing (CapCut &amp; Premiere)</li>
+                <li>Photography &amp; documentation</li>
+                <li>Creative design (Canva)</li>
+                <li>Language analysis &amp; communication</li>
+                <li>Digital tech &amp; gadgets</li>
+                <li>Self-taught coding (HTML, CSS, JS)</li>
+              </ul>
+            </div>
+          </article>
+          <figure class="window">
+            <figcaption class="window-bar">pixel-pet.js</figcaption>
+            <img src="assets/img/quests/pixel-pet.jpg" alt="Close-up of the pixel aquarium on this site" width="744" height="594" loading="lazy" />
+          </figure>
+          <article class="window">
+            <p class="window-bar">typing.js</p>
+<pre class="window-code"><code><span class="c">// the headline of my first portfolio</span>
+const phrases = [
+  "Linguistik Indonesia",
+  "Video Editor",
+  "Content Creator",
+  "Pembelajar Otodidak",
+  "Tech Enthusiast",
+  "Storyteller Visual",
+];</code></pre>
+          </article>
+          <article class="window">
+            <p class="window-bar">about-this-pet.txt</p>
+            <div class="window-text">
+              <h2 class="serif">Behind the pet</h2>
+              <p>The cat-eared toy on my home page is a little playground for code: a 3D model, a pixel <em>cupang</em> (betta fish), chiptune sounds, and a guessing game.</p>
+              <p>Press the pink buttons to feed the fish, play a round, or tuck it in.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Stiker bisa di-drag ke mana saja. RESET mengembalikan ke tempatnya. -->
+        <div class="scrapbook">
+          <div class="sticker-sheet" aria-label="Sticker sheet. Drag stickers anywhere on the page.">
+            <div class="sticker-slot"><button class="sticker sticker--label" type="button" aria-label="Sticker: stickers"><span>stickers!</span></button></div>
+            <div class="sticker-slot"><button class="sticker" type="button" aria-label="Sticker: fish">🐟</button></div>
+            <div class="sticker-slot"><button class="sticker" type="button" aria-label="Sticker: bubble tea">🧋</button></div>
+            <div class="sticker-slot"><button class="sticker" type="button" aria-label="Sticker: cat">🐈</button></div>
+            <div class="sticker-slot"><button class="sticker" type="button" aria-label="Sticker: noodles">🍜</button></div>
+            <div class="sticker-slot"><button class="sticker" type="button" aria-label="Sticker: chili">🌶️</button></div>
+            <div class="sticker-slot"><button class="sticker" type="button" aria-label="Sticker: hibiscus">🌺</button></div>
+            <div class="sticker-slot"><button class="sticker" type="button" aria-label="Sticker: headphones">🎧</button></div>
+            <button class="sticker-reset" type="button" data-sticker-reset>RESET</button>
+          </div>
+
+          <div class="note-wrap">
+            <!-- Daftar to-do: ubah sesukamu -->
+            <div class="note">
+              <h2>to do:</h2>
+              <ul role="list">
+                <li><label><input type="checkbox" checked /><span>build my portfolio</span></label></li>
+                <li><label><input type="checkbox" /><span>learn JavaScript properly</span></label></li>
+                <li><label><input type="checkbox" /><span>edit my next short film</span></label></li>
+                <li><label><input type="checkbox" /><span>take more photos around Gorontalo</span></label></li>
+              </ul>
+            </div>
+            <figure class="polaroid">
+              <img src="assets/img/about-2.jpg" alt="Nawfal by the sea" width="954" height="1193" loading="lazy" />
+              <figcaption>halo, it's me</figcaption>
+            </figure>
+            <button class="sticker sticker--a" type="button" aria-label="Sticker: star">⭐</button>
+            <button class="sticker sticker--b" type="button" aria-label="Sticker: fish">🐠</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PROFILE ============ -->
+      <section class="view" id="profile" data-view="profile" aria-labelledby="profile-title" hidden>
+        <div class="profile">
+          <div class="photo-stack">
+            <figure class="photo photo--back">
+              <img src="assets/img/about-1.jpg" alt="Poster for Simpang Kisah, a short film I edited" width="800" height="1000" loading="lazy" />
+            </figure>
+            <figure class="photo photo--front">
+              <img src="assets/img/profile.jpg" alt="Portrait of Mohammad Nawfal Arfa by the sea" width="1100" height="1193" loading="lazy" />
+            </figure>
+            <svg class="icon paperclip" aria-hidden="true" viewBox="0 0 256 256" fill="currentColor"><path d="M209.66,122.34a8,8,0,0,1,0,11.32l-82.05,82a56,56,0,0,1-79.2-79.21L147.67,35.73a40,40,0,1,1,56.61,56.55L105,193A24,24,0,1,1,71,159L154.3,74.38A8,8,0,1,1,165.7,85.6L82.39,170.31a8,8,0,1,0,11.27,11.36L192.93,81A24,24,0,1,0,159,47L59.76,147.68a40,40,0,1,0,56.53,56.62l82.06-82A8,8,0,0,1,209.66,122.34Z"/></svg>
+          </div>
+          <div class="profile-text">
+            <h2 class="serif" id="profile-title">About me</h2>
+            <p>
+              I'm Mohammad Nawfal Arfa, an Indonesian Linguistics student at Universitas Pembangunan Nasional "Veteran" Jawa Timur. I'm deeply curious about where language meets digital technology, and as a self-taught learner I love exploring technical skills, from the basics of programming to multimedia production.
+            </p>
+            <p>
+              I'm always keen to pick up new tools that help me be more creative, especially in video editing and photography. My focus is making work that feels <em>new</em>, using the latest technology I can get my hands on.
+            </p>
+            <div class="files">
+              <div class="file">
+                <span class="mono">exploring.txt</span>
+                <p>teaching myself to code: HTML, CSS, and JavaScript.</p>
+              </div>
+              <div class="file">
+                <span class="mono">after-hours.txt</span>
+                <p>editing videos in CapCut and Premiere, and taking photos.</p>
+              </div>
+              <div class="file">
+                <span class="mono">find-me.txt</span>
+                <p><a href="https://www.instagram.com/izzatiin_/" target="_blank" rel="noopener">@izzatiin_</a> on Instagram, based in Kota Gorontalo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <nav class="dock" aria-label="Sections">
+      <a href="#works" data-dock="works">
+        <span class="dock-icon dock-icon--works" aria-hidden="true"><svg class="icon" viewBox="0 0 256 256" fill="currentColor"><path d="M232,88V200.89A15.13,15.13,0,0,1,216.89,216H40a16,16,0,0,1-16-16V64A16,16,0,0,1,40,48H93.33a16.12,16.12,0,0,1,9.6,3.2L130.67,72H216A16,16,0,0,1,232,88Z"/></svg></span>
+        <span class="dock-label">works</span>
+      </a>
+      <a href="#quests" data-dock="quests">
+        <span class="dock-icon dock-icon--quests" aria-hidden="true"><svg class="icon" viewBox="0 0 256 256" fill="currentColor"><path d="M247.44,173.75a.68.68,0,0,0,0-.14L231.05,89.44c0-.06,0-.12,0-.18A60.08,60.08,0,0,0,172,40H83.89a59.88,59.88,0,0,0-59,49.52L8.58,173.61a.68.68,0,0,0,0,.14,36,36,0,0,0,60.9,31.71l.35-.37L109.52,160h37l39.71,45.09c.11.13.23.25.35.37A36.08,36.08,0,0,0,212,216a36,36,0,0,0,35.43-42.25ZM104,112H96v8a8,8,0,0,1-16,0v-8H72a8,8,0,0,1,0-16h8V88a8,8,0,0,1,16,0v8h8a8,8,0,0,1,0,16Zm40-8a8,8,0,0,1,8-8h24a8,8,0,0,1,0,16H152A8,8,0,0,1,144,104Zm84.37,87.47a19.84,19.84,0,0,1-12.9,8.23A20.09,20.09,0,0,1,198,194.31L167.8,160H172a60,60,0,0,0,51-28.38l8.74,45A19.82,19.82,0,0,1,228.37,191.47Z"/></svg></span>
+        <span class="dock-label">quests</span>
+      </a>
+      <a href="#profile" data-dock="profile">
+        <span class="dock-icon dock-icon--profile" aria-hidden="true"><img src="assets/img/profile.jpg" alt="" width="1200" height="1500" /></span>
+        <span class="dock-label">profile</span>
+      </a>
+    </nav>
+
+    <p class="corner corner--left">Built with care &amp; fueled by es teh</p>
+    <p class="corner corner--right">Last updated 10/26</p>
+
+    <script src="assets/js/pet.js" defer></script>
+    <script src="assets/js/pet-fx.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/pet3d.js" type="module"></script>
+  </body>
+</html>
